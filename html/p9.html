@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>MARQUEE TAG</title>
+    </head>
+    <BODY>
+        <marquee>THIS IS THE MARQUEE TAG...!</marquee>
+        <marquee><a href="#">This is the marquee tag.</a></marquee>
+        <marquee bgcolor="teal">This is the marquee tag.</marquee>
+        <br><hr><br>
+        <marquee behavier="alternate" bgcolor="skyblue">This is the alternative marquee tag..!</marquee>
+        <br><br>
+        <marquee behavier="scroll" bgcolor="skyblue">This is the alternative marquee tag..!</marquee>
+        <br><br>
+        <marquee behavier="slide" bgcolor="skyblue">This is the alternative marquee tag..!</marquee>
+        <br><br><hr>
+
+        <marquee direction="right" bgcolor="teal">This is right direction marquee tag..!</marquee>
+        <br><br>
+        <marquee direction="left" bgcolor="teal">This is right direction marquee tag..!</marquee>
+        <br><br>
+        <marquee direction="up" bgcolor="teal" height="100">This is right direction marquee tag..!</marquee>
+        <br><br>
+        <marquee direction="down" bgcolor="teal" height="100">This is right direction marquee tag..!</marquee>
+        <br><br><hr>
+        <marquee bgcolor="skyblue" scrollamount="1">this is the marquee tag...!</marquee>
+        <br><br>
+        <marquee bgcolor="skyblue" scrollamount="20" id="test">this is the marquee tag...!</marquee>
+        <br><br>
+        <marquee bgcolor="skyblue" scrollamount="10">this is the marquee tag...!</marquee>
+        <br><br>
+        <marquee bgcolor="skyblue" scrollamount="5">this is the marquee tag...!</marquee>
+        <br><br><hr>
+
+    <script>
+        let marqueeTag = document.getElementById("test");
+
+        marqueeTag.onmouseover = function(){
+            marqueeTag.stop();
+
+        }
+        marqueeTag.onmouseleave = function(){
+            marqueeTag.start();
+
+        }
+
+    </script>
+
+    </BODY>
+</html>
